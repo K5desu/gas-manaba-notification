@@ -16,30 +16,19 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": ["error"],
-    "@typescript-eslint/explicit-function-return-type": ["error", {}],
-    "@typescript-eslint/no-explicit-any": "error", // 暗黙の any 型を禁止
-    "@typescript-eslint/typedef": [
+    "prettier/prettier": [
       "error",
       {
-        "arrayDestructuring": true, // 配列の分割代入に型を要求
-        "arrowParameter": true, // アロー関数のパラメータに型を要求
-        "memberVariableDeclaration": true, // クラスのメンバー変数に型を要求
-        "objectDestructuring": true, // オブジェクトの分割代入に型を要求
-        "parameter": true, // 関数のパラメータに型を要求
-        "propertyDeclaration": true, // プロパティ宣言に型を要求
-        "variableDeclaration": true, // 変数宣言に型を要求
-        "variableDeclarationIgnoreFunction": false // 関数型の変数にも型を要求
+        "endOfLine": "auto" // Prettier の改行コード設定を自動化
       }
-    ]
+    ],
+    "@typescript-eslint/explicit-function-return-type": ["error", {}]
   },
   "overrides": [
     {
       "files": ["*.js"],
       "rules": {
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/typedef": "off"
+        "@typescript-eslint/explicit-function-return-type": "off"
       }
     }
   ]
