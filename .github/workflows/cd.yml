@@ -27,21 +27,29 @@ jobs:
             exit 1
           else
             echo "ID_TOKEN is set"
+          fi
+
           if [ -z "${{ secrets.ACCESS_TOKEN }}" ]; then
             echo "ACCESS_TOKEN is not set or empty"
             exit 1
           else
             echo "ACCESS_TOKEN is set"
+          fi
+
           if [ -z "${{ secrets.REFRESH_TOKEN }}" ]; then
             echo "REFRESH_TOKEN is not set or empty"
             exit 1
           else
             echo "REFRESH_TOKEN is set"
+          fi
+          
           if [ -z "${{ secrets.CLIENTID }}" ]; then
             echo "CLIENTID is not set or empty"
             exit 1
           else
             echo "CLIENTID is set"
+          fi
+          
           if [ -z "${{ secrets.CLIENTSECRET }}" ]; then
             echo "CLIENTSECRET is not set or empty"
             exit 1
