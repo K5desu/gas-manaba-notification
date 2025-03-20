@@ -16,12 +16,6 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto" // Prettier の改行コード設定を自動化
-      }
-    ],
     "@typescript-eslint/explicit-function-return-type": ["error", {}]
   },
   "overrides": [
