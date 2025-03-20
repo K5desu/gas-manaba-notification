@@ -17,16 +17,15 @@
   "author": "K5desu <dekinousyonn@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/plugin-transform-runtime": "^7.26.10",
-    "@babel/preset-env": "^7.21.4",
-    "@babel/preset-typescript": "^7.21.4",
-    "@google/clasp": "^2.4.2",
-    "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-commonjs": "^28.0.3",
-    "@rollup/plugin-node-resolve": "^15.0.2",
-    "@rollup/plugin-typescript": "^12.1.2",
-    "@types/google-apps-script": "^1.0.97",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/runtime": "^7.26.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-typescript": "^7.12.7",
+    "@google/clasp": "^2.3.0",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "@types/google-apps-script": "^1.0.20",
     "@typescript-eslint/eslint-plugin": "^8.26.1",
     "@typescript-eslint/parser": "^8.26.1",
     "cross-env": "^7.0.3",
@@ -37,32 +36,7 @@
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
     "rollup": "^4.9.2",
-    "typescript": "^5.8.2"
-  },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ],
-      "@babel/preset-typescript"
-    ],
-    "plugins": [
-      [
-        "@babel/plugin-transform-runtime",
-        {
-          "regenerator": true
-        }
-      ]
-    ]
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.26.10",
-    "googleapis": "^146.0.0",
-    "nodemailer": "^6.10.0"
+    "typescript": "^5.8.2",
+    "googleapis": "^146.0.0"
   }
 }

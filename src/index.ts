@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { checkSender } from './lib/gmail';
 
-checkSender();
+(globalThis as any).checkSender = checkSender;

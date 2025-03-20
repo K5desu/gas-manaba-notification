@@ -12,5 +12,3 @@ export const checkSender = (): void => {
     });
   });
 };
-//実行
-checkSender();
