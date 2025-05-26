@@ -9,7 +9,7 @@ claspを用いてgasをgithub上で管理します。
 
 # Usage
 
-1. 自分のgasエディタの拡張機能のタブからGASを開き，スクリプトIDを本ディレクトリ内にある.clasp.jsonの"scriptId"の値に挿入します．
+1. 自分のgasエディタの拡張機能のタブからGASを開き，スクリプトIDを本ディレクトリ内にある.clasp.jsonの"scriptId"の値に挿入します．(scriptIdは漏れても問題ないです。)
 
 2. `sudo npm install -g @google/clasp`を実行します。
 
