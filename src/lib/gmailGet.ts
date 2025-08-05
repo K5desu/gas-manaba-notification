@@ -23,7 +23,7 @@ export const checkSender = (domain: string): void => {
       // メールの送信者が指定したドメインかどうかを確認
       if (sender.includes(domain)) {
         // ログにメールの送信者を出力
-        console.log(`メールが見つかりました: ${sender}`);
+        console.log(`メールがありました: ${sender}`);
       }
     });
   });
